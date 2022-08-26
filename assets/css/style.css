@@ -1,0 +1,151 @@
+:root {
+    --color: #FF7200;
+}
+
+/* ---- reset ---- */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+} 
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0047ce;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13e8e9;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+
+/* Login */
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    margin-left: -135px;
+}
+ 
+.login {
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    left: 50%;
+    margin-left: -210px;
+    position: absolute;
+    top: 25%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px rgba(128, 128, 128, 0.498);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #FF7200;
+    outline: none;
+}
+
+form button {
+    padding: 10px 40px;
+    font-size: 16px;
+    background-color: var(--color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.boxes {
+    display: flex;
+}
+
+.boxes a {
+    color: var(--color);
+}
+
+.box {
+    background-color: white;
+    margin: 10px 20px 60px 20px;
+    padding: 30px 50px;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px rgba(128, 128, 128, 0.505);
+    transition: all 0.5s;
+}
+
+.box:hover {
+    background-color: var(--color);
+    transform: scale(0.9);
+}
+
+.boxes a:hover {
+    color: white;
+}
